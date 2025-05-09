@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🌸 Read English Story 🌸</title>
+  <title>🌸 English Story Corner 🌸</title>
   <style>
     * {
       box-sizing: border-box;
@@ -22,11 +22,11 @@
       height: 100%;
       overflow-y: auto;
       scroll-behavior: smooth;
-      padding: 40px 20px;
+      padding: 20px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 60px;
+      gap: 30px;
     }
 
     .page-title {
@@ -47,22 +47,37 @@
       line-height: 1.6;
     }
 
-    nav {
+    .sticky-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin: 20px 0;
+      padding: 20px 0;
+      background: none;
     }
 
-    nav a {
+    .sticky-navbar-inner {
+      background-color: #fff3ee;
+      border-radius: 15px;
+      padding: 10px 30px;
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      font-size: 1.6rem;
+      max-width: 700px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .sticky-navbar-inner a {
       text-decoration: none;
       color: #ff6f61;
-      font-size: 1.2rem;
       font-weight: bold;
     }
 
-    nav a:hover {
+    .sticky-navbar-inner a:hover {
       text-decoration: underline;
     }
 
@@ -80,6 +95,18 @@
       text-align: center;
     }
 
+    .section p:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .section a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #175bb9;
+    }
+
     .section img {
       width: 300px;
       max-width: 90%;
@@ -91,7 +118,7 @@
     .book-section {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
       width: 100%;
       align-items: center;
     }
@@ -115,7 +142,7 @@
       display: block;
       margin-top: 10px;
       font-size: 1rem;
-      color: #0077cc;
+      color: #175bb9;
       text-decoration: none;
     }
 
@@ -137,6 +164,12 @@
         width: 95%;
         padding: 20px 15px;
       }
+
+      .sticky-navbar-inner {
+        gap: 20px;
+        font-size: 1.2rem;
+        padding: 8px 20px;
+      }
     }
   </style>
 </head>
@@ -146,39 +179,80 @@
 
     <div class="intro">
       <p>👋 Hello guys! Welcome to my cozy little corner of English stories. 🌈</p>
-      <p>Here, you can read, support, and explore books I truly love and recommend. 📚💖</p>
+      <p>Here, you can support me if you could! And You can enjoy reading and exploring these books! I think they're suitable for children and those who are just starting to learn English! 📚💖</p>
       <p>Thanks for stopping by and being part of this lovely journey! 🎉</p>
     </div>
 
-    <nav>
-      <a href="#paypal">PayPal</a>
-      <a href="#banking">Banking</a>
-      <a href="#books">Books</a>
+    <nav class="sticky-navbar">
+      <div class="sticky-navbar-inner">
+        <a href="#paypal">PayPal</a>
+        <a href="#banking">Banking</a>
+        <a href="#books">Books</a>
+      </div>
     </nav>
 
     <div id="paypal" class="section">
       <p>💳 Support me via PayPal:</p>
-      <p><strong><a href="https://paypal.me/yourname" target="_blank">paypal.me/yourname</a></strong></p>
+      <p><strong><a href="paypal.me/englishstorycornervn" target="_blank"></a></strong></p>
     </div>
 
     <div id="banking" class="section">
       <p>📲 Or use my banking QR code below:</p>
-      <img src="qr.png" alt="Banking QR Code" />
+      <img src="qr.jpg" alt="Bank QR Code" />
     </div>
 
     <div id="books" class="book-section">
-      <h2 style="color: #ff6f61; text-align: center;">📚 Books I'm Selling</h2>
+      <h2 style="color: #ff6f61; text-align: center;">📚 Funny and lovely bilingual books I recommend</h2>
 
       <div class="book">
-        <img src="book1.png" alt="Book 1">
-        <a href="https://yourlink1.com" target="_blank">Link for buying</a>
+        <img src="book1.jpg" alt="The first bilingual library">
+        <a href="https://s.shopee.vn/40TpkCZBdw" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
       </div>
 
       <div class="book">
-        <img src="book2.png" alt="Book 2">
-        <a href="https://yourlink2.com" target="_blank">Link for buying</a>
+        <img src="book2.jpg" alt="My first 1000 English words">
+        <a href="https://s.shopee.vn/6AYKKMzxH4" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
       </div>
-    </div>
+
+      <div class="book">
+        <img src="book3.jpg" alt="A collection of bilingual English – Vietnamese world fairy tale picture books">
+        <a href="https://s.shopee.vn/1VmUltb9rV" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book4.jpg" alt="A collection of bilingual English – Vietnamese fairy tale picture books">
+        <a href="https://s.shopee.vn/10qEB2tWfG" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book5.jpg" alt="Bilingual English – Vietnamese storytelling books for preschoolers">
+        <a href="https://s.shopee.vn/9zl2tfjMq1" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book6.jpg" alt="Children's fairy tale picture books">
+        <a href="https://s.shopee.vn/1g5uyQHo4g" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book7.jpg" alt="Bilingual English – Vietnamese storytelling books for preschoolers">
+        <a href="https://s.shopee.vn/7KkHitCl63" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book8.jpg" alt="A set of bilingual English – Vietnamese storybooks">
+        <a href="https://s.shopee.vn/10qEBJ8zb9" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book9.jpg" alt="Random comic books for preschoolers">
+        <a href="https://s.shopee.vn/8zsVi3hnH6" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="book10.jpg" alt="Bilingual English – Vietnamese storybooks">
+        <a href="https://s.shopee.vn/60Eu99zNk4" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
   </div>
 </body>
 </html>
